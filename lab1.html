@@ -34,14 +34,30 @@
 // console.log(maxValue(1,2,3,4,5,6))
 
 //---------------------- number 3 --------------------------//
-let obj={
-    name:"marwa",
-    university:"helwan",
-    faculty:"FCAIH",
-    grade:3.02
-}
-console.log(`${obj.name} is a student in faculty of ${obj.faculty} in university ${obj.university} and her final grade is ${obj.grade}`);
+// let obj={
+//     name:"marwa",
+//     university:"helwan",
+//     faculty:"FCAIH",
+//     grade:3.02
+// }
+// console.log(`${obj.name} is a student in faculty of ${obj.faculty} in university ${obj.university} and her final grade is ${obj.grade}`);
 
+//----------------------- number 4 -----------------------//
+var arr=["Egypt","Oman", "Canada","Egypt"]
+var mySet = new Set(arr);
+mySet.add("Canada"); //set won't accept repeated values
+console.log(...mySet);
+for(let i of mySet){
+    console.log(i);
+}
+console.log(arr.length-mySet.size);
+
+var set2=new Set(["US", "UK", "France", "Egypt"]);
+function getDifference(mySet, set2){
+    return( [...mySet.filter(element => !set2.has(element))]);
+}
+console.log(getDifference(mySet,set2));
+//--------------------------number 5 ---------------------//
 
 
 
