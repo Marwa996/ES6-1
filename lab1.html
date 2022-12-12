@@ -51,17 +51,40 @@ for(let i of mySet){
     console.log(i);
 }
 console.log(arr.length-mySet.size);
+var arr2=["US", "UK", "France", "Egypt"]
+var set2=new Set(arr2);
 
-var set2=new Set(["US", "UK", "France", "Egypt"]);
-function getDifference(mySet, set2){
-    return( [...mySet.filter(element => !set2.has(element))]);
-}
-console.log(getDifference(mySet,set2));
+var arr=[...mySet, ...set2];
+console.log(arr);
+
 //--------------------------number 5 ---------------------//
 
+// let map=new Map();
+// map.set("negm",[{
+//     Coursename:"JavaScript",
+//     Grade:"Excellent"},
+// {
+//     Coursename:"Jquery",
+//     Grade:"Good"},
+// {
+//     Coursename:"React",
+//     Grade:"V.Good"},
+// {
+//     Coursename:"ESNext",
+//     Grade:"Good"},
+// {
+//     Coursename:"NodeJS",
+//     Grade:"V.Good"}]
+//     );
 
+// for(let [key,val] of map){
+//     for( let i of val)
+//     console.log(`name ${key}, his course: ${i.Coursename}, and his grade ${i.Grade}`);
+// }
 
-
+// map.forEach((key,val)=>{
+//     console.log(`student name is ${val} and his courses are ${map[val].Coursename} and his grades are ${map[val].grades}`);
+// })
 
     </script>
 </body>
